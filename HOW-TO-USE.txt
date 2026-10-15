@@ -1,0 +1,78 @@
+FIND YOUR OFFER
+
+Stuck on "I do not know what to sell"? This digs it out of you.
+
+It runs inside Claude and interviews you the way Alex Hormozi would, using his three Ps:
+  Pain        a problem you had and fixed for yourself
+  Profession  a job you were paid to do
+  Passion     a thing you do when nobody is paying you
+
+It asks about your life, your wins and who you know. It pushes when you give a soft answer.
+Then it flips and asks who would pay.
+
+About 24 questions. 15 to 20 minutes. You can stop and come back.
+Starting from zero? Run it anyway. You still leave with a plan.
+
+
+HOW TO INSTALL (pick one)
+
+1. Claude Code, the easy way
+   Download find-your-offer.zip. Open Claude Code and paste this:
+
+   Unzip find-your-offer.zip from my Downloads folder and put the find-your-offer folder inside ~/.claude/skills/
+
+   Open a new Claude Code session and type /find-your-offer
+
+2. Claude Code, by hand
+   Unzip find-your-offer.zip. Drag the find-your-offer folder into ~/.claude/skills/
+   Mac: in Finder press Cmd+Shift+G and paste ~/.claude/skills
+   Windows: C:\Users\<you>\.claude\skills\
+   Open a new Claude Code session and type /find-your-offer
+
+3. Claude.ai, no Claude Code
+   Make a new Project. Upload SKILL.md, interview.md and routes.md from the
+   find-your-offer folder as project knowledge. Type: find your offer
+   Claude cannot save files there, so copy your result page when it prints.
+
+
+HOW TO USE IT
+
+/find-your-offer          starts it, or picks up where you stopped
+/find-your-offer result   shows your result again
+/find-your-offer reset    starts over
+
+Answer one question at a time. Short and true beats long and polished.
+Some questions are open. Some give you options: type the letter, or say it your own way.
+If you say "I am good with people" it will ask for one real time it happened. Give it one.
+When it asks for names, give real names. A type of person is not a name.
+
+
+WHAT YOU GET AT THE END
+
+- Your unique talents
+- The gap in the market you can fill
+- The skills you already have
+- Your route, with a rough offer in one sentence
+- Your research plan: the podcast method, or the white paper method if you
+  will not go on camera
+- The invite to send, the six questions to ask, the people to start with
+- A one-page version that opens in your browser
+
+
+THE THREE ROUTES
+
+A. You have an edge.       A service built on your own talent.
+B. No clear edge yet.      The simplest model (lead generation, or AI setup
+                           if you are good with tech), aimed at people you know.
+C. Starting from zero.     You pick one of five niches and start there.
+
+Every route ends the same way: go and talk to buyers, write down the problems
+you keep hearing, and build your offer from those.
+
+
+WHAT IT WILL NOT DO
+
+It never makes up a skill, a result or a number for you.
+It never tells you what you will earn or what to charge.
+It never sends anything for you.
+It does not build your full offer. The market does that.

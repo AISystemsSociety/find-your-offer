@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Your Offer: {{name}}</title>
+<style>
+  :root { --bg:#0b0616; --panel:#150c2b; --line:#5b3fc4; --pink:#ff5fd2; --soft:#f6c9ff; --text:#ece6ff; --dim:#a99fd0; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:radial-gradient(1200px 700px at 30% 0%, #2a1458 0%, var(--bg) 60%); color:var(--text);
+         font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; line-height:1.55; padding:32px 16px 64px; }
+  .frame { max-width:980px; margin:0 auto; border:2px solid var(--line); border-radius:18px; overflow:hidden; background:rgba(11,6,22,.75);
+           box-shadow:0 0 60px rgba(160,80,255,.25); }
+  .bar { background:#1b1236; padding:12px 18px; display:flex; gap:8px; }
+  .bar i { width:12px; height:12px; border-radius:50%; display:block; }
+  .bar i:nth-child(1){background:#ff5f57} .bar i:nth-child(2){background:#febc2e} .bar i:nth-child(3){background:#28c840}
+  .in { padding:36px clamp(18px,5vw,56px) 48px; }
+  .tag { display:inline-block; border:1px solid var(--line); padding:6px 14px; color:var(--dim); font-size:14px; }
+  h1 { font-size:clamp(34px,7vw,68px); line-height:1.02; margin:18px 0 6px; color:var(--soft); letter-spacing:1px;
+       text-shadow:3px 3px 0 #a81f9c, 0 0 28px rgba(255,95,210,.55); text-transform:uppercase; }
+  .sub { color:var(--dim); margin:0 0 30px; }
+  .hero { border:2px solid var(--pink); border-radius:14px; padding:22px 24px; margin:0 0 28px; background:rgba(255,95,210,.07);
+          box-shadow:0 0 34px rgba(255,95,210,.2); }
+  .hero .k { color:var(--pink); font-size:13px; letter-spacing:2px; text-transform:uppercase; }
+  .hero p { font-size:clamp(19px,3vw,26px); margin:8px 0 10px; color:#fff; line-height:1.35; }
+  .hero small { color:var(--dim); font-size:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
+  .card { background:var(--panel); border:1px solid #2c1e5c; border-radius:14px; padding:20px 22px; }
+  .card.wide { grid-column:1/-1; }
+  h2 { font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--pink); margin:0 0 12px; }
+  ul, ol { margin:0; padding-left:20px; } li { margin:0 0 8px; }
+  dl { margin:0; display:grid; grid-template-columns:90px 1fr; gap:8px 12px; } dt { color:var(--dim); } dd { margin:0; }
+  blockquote { margin:10px 0 0; padding:14px 16px; border-left:3px solid var(--pink); background:rgba(255,255,255,.04); border-radius:0 10px 10px 0; }
+  .week li::marker { color:var(--pink); font-weight:700; }
+  .foot { margin-top:28px; font-size:clamp(17px,2.6vw,22px); color:var(--soft); }
+  .foot b { color:var(--pink); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="bar"><i></i><i></i><i></i></div>
+  <div class="in">
+    <span class="tag">find your offer &nbsp;|&nbsp; pain, profession, passion</span>
+    <h1>{{name}}</h1>
+    <p class="sub">{{date}}</p>
+
+    <div class="hero">
+      <div class="k">Your route: {{route}}</div>
+      <p>{{sentence}}</p>
+      <small>Backup: {{backup}}<br>This is a rough idea. That is enough. The market finishes it.</small>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h2>Your unique talents</h2><ul>{{talents}}</ul></div>
+      <div class="card"><h2>Skills you already have</h2><ul>{{skills}}</ul></div>
+      <div class="card wide"><h2>The gap you can fill</h2>
+        <dl><dt>Who</dt><dd>{{gap_who}}</dd><dt>Problem</dt><dd>{{gap_problem}}</dd><dt>Why you</dt><dd>{{gap_why}}</dd></dl>
+      </div>
+      <div class="card wide"><h2>Your research plan: {{method}}</h2>
+        <dl><dt>They get</dt><dd>{{they_get}}</dd><dt>You get</dt><dd>Their problems, in their own words</dd></dl>
+        <blockquote>{{invite}}</blockquote>
+      </div>
+      <div class="card"><h2>Ask on the call</h2><ol>{{questions}}</ol></div>
+      <div class="card"><h2>Start with these people</h2><ol>{{people}}</ol></div>
+      <div class="card wide week"><h2>This week</h2>
+        <ol>
+          <li>Send the invite to the first five names today. Warm first.</li>
+          <li>Do the calls. Ask, listen, do not pitch.</li>
+          <li>After each call, write down their three biggest problems in their exact words.</li>
+          <li>When the same problem keeps showing up, that is your offer. Build that.</li>
+        </ol>
+      </div>
+    </div>
+
+    <p class="foot">You do not need to have it all worked out. <b>You need to go and talk to people.</b></p>
+  </div>
+</div>
+</body>
+</html>
